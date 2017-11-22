@@ -1,24 +1,23 @@
-(document).ready(function(){
-    //Stores Inputs
-    var inputs = [""];
+$(document).ready(function(){
+    $('.btn').on('click', function(){
+        var value = $(this).val();
+        $('#steps').append(value);
+    });
 
-    //String to store current input
-    var totatString;
+    $('.bigButton[name = "equals"]').on('click', function()
+    {
+        var calc = $("#steps").text();
+        var answer = eval(calc);
+        $('#answer').text(answer);
+    });
 
-    var operators1 = ["+", "-", "*", "/"];
+    $('button[name="clear"]').on('click', function(){
+        $('#steps').text('');
+        $('#answer').text('');
+    });
 
-    var operators2 = ["."];
-    var nums = [0,1,2,3,4,5,6,7,8,9];
-
-    function getValue(input){
-
-    }
-
-    function update(){
-
-    }
-
-    function getTotal(){
-        
-    }
 });
+
+
+
+

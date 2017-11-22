@@ -6,41 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Karelle's Calculator</title>
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/98fa6c23ba.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>    
 </head>
 <body>
-    <h1>K.Hofler's Calculator</h1>
-    <div id="calc">
-        <div id="calc-output">
-            <span id="steps">0</span>
-        
+    <nav class="site-nav">
+        <h4>Calculator</h4>
+    </nav>
+    
+    <main>
+        <div id="calc">
+            <div id="calc-output">
+                <span id="steps"></span>
+            </div>
+            <div id="calc-output">
+                    <span id="answer"></span>
+            </div>
+            <div id="calculator-inputs">
+                <button class = "btn bigButton" id="deleteAll" name="clear">
+                    AC
+                </button>
+                <button class ="btn btn-bg" id="/" value="/">/</button>
+                <button class ="btn btn-bg" id="*" value="*">*</button>
+                <br/>
+                <button class ="btn btn-bg" id="7" value="7">7</button>
+                <button class ="btn btn-bg" id="8" value="8">8</button>
+                <button class ="btn btn-bg" id="9" value="9">9</button>
+                <button class ="btn btn-bg" id="-" value="-">-</button>
+                <br/>
+                <button class ="btn btn-bg" id="4" value="4">4</button>
+                <button class ="btn btn-bg" id="5" value="5">5</button>
+                <button class = "btn btn-bg" id="6" value="6">6</button>
+                <button class = "btn btn-bg" id="+" value="+">+</button>
+                <br/>
+                <button class ="btn btn-bg" id="3" value="3">3</button>
+                <button class ="btn btn-bg" id="2" value="2">2</button>
+                <button class ="btn btn-bg" id="1" value="1">1</button>
+                <button class ="btn btn-bg" id="." value=".">.</button>
+                <br/>
+                <button class ="btn btn-bg bigButton" id="0" value="0">0</button>
+                <button class ="btn btn-bg bigButton" id="=" name="equals">=</button>
+            </div>
         </div>
-        <div id="calculator-inputs">
-            <a class="btn" id="deleteAll">
-                AC
-            </a>
-            <a class="btn" id="backOne">CE</a>
-            <a class="btn btn-bg" id="/">/</a>
-            <a class="btn btn-bg" id="*">*</a>
-            <br/>
-            <a class="btn btn-bg" id="7">7</a>
-            <a class="btn btn-bg" id="8">8</a>
-            <a class="btn btn-bg" id="9">9</a>
-            <a class="btn btn-bg" id="-">-</a>
-            <br/>
-            <a class="btn btn-bg" id="4">4</a>
-            <a class="btn btn-bg" id="5">5</a>
-            <a class="btn btn-bg" id="6">6</a>
-            <a class="btn btn-bg" id="+">+</a>
-            <br/>
-            <a class="btn btn-bg" id="3">3</a>
-            <a class="btn btn-bg" id="2">2</a>
-            <a class="btn btn-bg" id="1">1</a>
-            <a class="btn btn-bg" id=".">.</a>
-            <br/>
-            <a class="btn btn-bg bigButton" id="0">0</a>
-            <a class="btn btn-bg bigButton" id="total">=</a>
-        </div>
-    </div>
+    </main>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="https://www.github.com/hoflerk94">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.instagram.com/khoflerco">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 </html>
