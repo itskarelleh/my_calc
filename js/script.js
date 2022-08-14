@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
     $('.btn').on('click', function(){
         var value = $(this).val();
         $('#steps').append(value);
